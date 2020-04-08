@@ -80,6 +80,15 @@
 
 <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-<script src="./jquery-nav.js"></script>
+<script>
+    // The short cur for jQuery is $
+    jQuery(document).ready(function () {
+        jQuery('.burger-menu').on('click', function () {
+            // $('.mobile-nav').toggle('slow');
+            // $('.mobile-nav').toggle(500);
+            $('.mobile-nav').fadeToggle(500);
+        });
+    });
+</script>
 
 </html>
