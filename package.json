@@ -1,0 +1,16 @@
+{
+  "name": "web-portfolio-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://M-Faried.github.io/simple-portfolio-example",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500&display=swap');
+
+body {
+  background-color: #ebebeb;
+  font-family: 'Asap', sans-serif;
+  color: white;
+}
+
+header {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 40px 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: white;
+}
+
+.header-container {
+  background-color: rgb(80, 80, 80);
+  width: 100%;
+  position: fixed;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 140px;
+}
+
+.card {
+  background-color: rgb(43, 226, 147);
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.card img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card p {
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+.card p::first-line {
+  font-weight: bold;
+}
+
+.span-highlight {
+  font-weight: 700;
+}
+
+.nav-button {
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+
+.mobile-wrapper {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.min-screen-desktop {
+  display: block;
+}
+
+.min-screen-tablet {
+  display: block;
+}
+
+/* Table View */
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+  .min-screen-desktop {
+    display: none;
+  }
+  .container {
+    padding-top: 100px;
+  }
+  header {
+    padding: 5px 20px;
+  }
+  nav {
+    display: none;
+  }
+  .logo {
+    padding: 20px 0;
+  }
+  .nav-button {
+    margin-left: 0;
+  }
+  /* Mobile menu styling */
+  .mobile-wrapper {
+    display: block;
+  }
+  .mobile-nav {
+    margin: 0;
+    display: none;
+    position: absolute;
+    padding-top: 20px;
+  }
+  .mobile-nav-button {
+    display: block;
+    background-color: coral;
+    padding: 15px 30px;
+    margin-left: -90px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 400px) {
+  .card {
+    width: 100%;
+  }
+  .min-screen-desktop {
+    display: none;
+  }
+  .min-screen-tablet {
+    display: none;
+  }
+}
